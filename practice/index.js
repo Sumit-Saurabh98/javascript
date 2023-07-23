@@ -134,3 +134,23 @@ console.log(person4.about())
 
 
 /// call, apply , bind method on function
+
+const user1 = {
+    name: "mohit",
+    age : 22,
+    about: function(weight, height){
+        console.log(this.name, this.age)
+    }
+}
+
+const user2 = {
+    name: "rajan",
+    age : 12
+}
+
+user1.about.call(user2, 50, 5)
+user1.about.apply(user2, [50, 5])
+
+const func = user1.about.bind(user2, 70, 3)
+
+func()
