@@ -81,7 +81,7 @@ for(let i in newObject){
 
 
 let set = new Set(arr);
-//set.add()
+set.add()
 console.log(set)
 
 for(let i of set){
@@ -95,7 +95,7 @@ person.set("lastName", "Chukanda")
 person.set("gender", "male")
 person.set("age", "22")
 
-// console.log(person)
+console.log(person)
 
 for(let key of person){
     console.log(key)
@@ -148,8 +148,8 @@ const user2 = {
     age : 12
 }
 
-user1.about.call(user2, 50, 5)
-user1.about.apply(user2, [50, 5])
+console.log(user1.about.call(user2, 50, 5))
+console.log(user1.about.apply(user2, [50, 5]))
 
 const func = user1.about.bind(user2, 70, 3)
 
