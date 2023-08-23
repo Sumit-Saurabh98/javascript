@@ -84,3 +84,9 @@ changeText(heading1, "one","violet",1000,()=>{
     },()=>{console.log("Heading3 does not exist")})
   },()=>{console.log("Heading2 does not exist")})
 },()=>{console.log("Heading1 does not exist")})
+
+// changeText(heading1, "one","violet",1000, ()=>{
+//   changeText(heading2, "two","purple",2000, ()=>{
+
+//   }, ()=>{console.log("Heading1 does not exist")})
+// }, ()=>{console.log("Heading1 does not exist")})
