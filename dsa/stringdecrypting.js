@@ -1,29 +1,29 @@
-function calculateCharacterFrequency(inputString) {
-  // Create an empty object to store character frequencies
-  const charFrequency = {};
+// function calculateCharacterFrequency(inputString) {
+//   // Create an empty object to store character frequencies
+//   const charFrequency = {};
 
-  // Iterate through the input string
-  for (const char of inputString) {
-    // If the character is already in the object, increment its count
-    if (charFrequency[char]) {
-      charFrequency[char]++;
-    } else {
-      // If the character is not in the object, initialize its count to 1
-      charFrequency[char] = 1;
-    }
-  }
+//   // Iterate through the input string
+//   for (const char of inputString) {
+//     // If the character is already in the object, increment its count
+//     if (charFrequency[char]) {
+//       charFrequency[char]++;
+//     } else {
+//       // If the character is not in the object, initialize its count to 1
+//       charFrequency[char] = 1;
+//     }
+//   }
 
-  // Create an empty result string
-  let resultString = '';
+//   // Create an empty result string
+//   let resultString = '';
 
-  // Iterate through the keys (characters) in the charFrequency object
-  for (const char in charFrequency) {
-    // Append the character and its frequency to the result string
-    resultString += char + charFrequency[char];
-  }
+//   // Iterate through the keys (characters) in the charFrequency object
+//   for (const char in charFrequency) {
+//     // Append the character and its frequency to the result string
+//     resultString += char + charFrequency[char];
+//   }
 
-  return resultString;
-}
+//   return resultString;
+// }
 
 // Example usage:
 // const inputString = "aaabbcddcdc";
@@ -58,26 +58,26 @@ function decryptString(given) {
   return decrypted;
 }
 
-// const given = "a3b2";
-// const decryptedString = decryptString(given);
-// console.log(decryptedString);
+const given = "a3b2";
+const decryptedString = decryptString(given);
+console.log(decryptedString);
 
 // character at k th point;
 
-function kthPoint(str){
-  let result = '';
-let i = 1;
-  while(i<=str.length){
-    let char = str[i]
-    i++;
+// function kthPoint(str){
+//   let result = '';
+// let i = 1;
+//   while(i<=str.length){
+//     let char = str[i]
+//     i++;
 
-    if(i%2===0){
-      result += char
-    }
-  }
-  return result;
-}
+//     if(i%2===0){
+//       result += char
+//     }
+//   }
+//   return result;
+// }
 
-console.log(kthPoint("a3b2e1c4"))
+// console.log(kthPoint("a3b2e1c4"))
 
 
